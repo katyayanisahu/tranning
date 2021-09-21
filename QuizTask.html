@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>
+        <strong>Question 1: What is javascript?</strong>
+    </p>
+
+    <input id="op1" type="radio" name="options"/>Pragramming Language <br>
+    <input id="correct1" type="radio" name="options"/>Scripting Language <br>
+    <input id="op3" type="radio" name="options"/>Both <br>
+    <input id="op4" type="radio" name="options"/>None <br>
+
+    <input type="submit" name="submit" value="submitQuiz" onclick="result()"/>
+</body>
+
+<script>
+
+    function result(){
+        var score = 0;
+       if( document.getElementById("correct1").checked )
+       {
+           score++ ;
+       }
+       document.write("your score is:"+score);
+    }
+
+</script>
+</html>
